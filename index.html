@@ -152,7 +152,7 @@ Maecenas interdum dignissim lorem quis auctor. Donec sit amet
 nulla nisl, aliquam pretium ipsum. Pellentesque sodales ipsum et 
 enim rutrum adipiscing. Quisque tincidunt mattis sapien, 
 vel posuere.</p>
-<a class="submit"href="#">Learn more</a>
+<a class="submit" href="#">Learn more</a>
 				</div>
 			</div>
 		</div>
@@ -286,7 +286,7 @@ vel posuere.</p>
     </section>
     <script>
             var count = 0;
-            $(".meter > span").css({"display":"none"})
+            $(".meter > span").css({"display":"none"});
         $(window).scroll(function(){
             var bar = $("#bar").offset().top  - 500;
             if(bar <= $(this).scrollTop() && count == 0){
@@ -404,7 +404,7 @@ condimentum. Duis mollis, est non commodo luctus, nisi erat ”</p>
 				<div type="1" class="col-xs-12 col-sm-6 col-md-4 img_p"><img src="img/profile6.png" alt=""><p class="text-profile">Neque Porro Quisquam</p><p class="text-profile1">app, icon, ui</p></div>
 				<div class="col-xs-12 watch_more"><a href="#">Watch more</a></div>
 			</div>
-		</div>
+		<!--</div>-->
 	</section>
     <section id="get_in_touch" class="background_block9">
         <div class="container">
@@ -470,8 +470,8 @@ condimentum. Duis mollis, est non commodo luctus, nisi erat ”</p>
             }
         });
 $('a.anchor').click(function (){
-var elementClick = $(this).attr("href")
-        $(".in").removeClass("in").css({"height":"1px"});;
+var elementClick = $(this).attr("href");
+        $(".in").removeClass("in").css({"height":"1px"});
 var destination = $(elementClick).offset().top - $('.navbar').height();
 $('html,body').animate({
 scrollTop: destination
